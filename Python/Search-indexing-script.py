@@ -22,7 +22,7 @@ def create_index(es_client, _index):
     mapping = {
         "mappings": {
             "properties": {
-                "title": {"type": "text", "analyzer": "english"},
+                "title": {"type": "text", "analyzer": "english", "fields" : {"keyword":{"type" : "keyword"}}},
                 "ethnicity": {"type": "text", "analyzer": "standard"},
                 "director": {"type": "text", "analyzer": "standard"},
                 "cast": {"type": "text", "analyzer": "standard"},
@@ -42,6 +42,7 @@ def create_index(es_client, _index):
         logger.info('Creating..')
         # now create a new index
         es_client.indices.create(index=_index, body=mapping)
+        es_client.indices.put_alias(index, "omnisearch_search")
         logger.info("Successfully created: {}".format(_index))
     except Exception as error:
         logger.error('Error: {}, index: {}'.format(error, _index))
@@ -134,7 +135,7 @@ if __name__ == "__main__":
     # Instance for the response time log
     es_host = get_es_instance(host)
     # --
-    index = "test_omnisearch_v1"
+    index = "test_omnisearch_v2"
 
     create_index(es_host, index)
     # sinngle_indexing_mode_run(es_host, index)
