@@ -106,7 +106,8 @@ def buffer_indexing_mode_run(es, _index):
             "wiki_page": row["Wiki Page"]
         }
 
-        actions.append({'index': {'_index': _index, '_id': i}})
+        # actions.append({'index': {'_index': _index, '_id': i}})
+        actions.append({'index': {'_index': _index}})
         actions.append(doc)
 
         if Get_Buffer_Length(actions) > MAX_BYTES:
