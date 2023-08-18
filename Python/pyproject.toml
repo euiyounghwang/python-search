@@ -4,11 +4,13 @@ version = "0.1.0"
 description = "Python-Search Project for indexing"
 authors = ["euiyounghwang <marieuig@gmail.com>"]
 readme = "README.md"
-packages = [{include = "3"}]
+#packages = [{include = "python-search"}]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.9"
 elasticsearch = "7.13.0"
+pandas = "^2.0.3"
+argparse = "^1.4.0"
 
 [build-system]
 requires = ["poetry-core"]

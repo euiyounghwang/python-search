@@ -1,0 +1,717 @@
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.006s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.006s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [WARNING] POST http://localhost:9209/_bulk [status:N/A request:0.002s]
+Traceback (most recent call last):
+  File "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Python/.venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Python/.venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Python/.venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 461, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/euiyoung.hwang/opt/anaconda3/lib/python3.9/http/client.py", line 1371, in getresponse
+    response.begin()
+  File "/Users/euiyoung.hwang/opt/anaconda3/lib/python3.9/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/Users/euiyoung.hwang/opt/anaconda3/lib/python3.9/http/client.py", line 288, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Python/.venv/lib/python3.9/site-packages/elasticsearch/connection/http_urllib3.py", line 251, in perform_request
+    response = self.pool.urlopen(
+  File "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Python/.venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Python/.venv/lib/python3.9/site-packages/urllib3/util/retry.py", line 525, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Python/.venv/lib/python3.9/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Python/.venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Python/.venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Python/.venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 461, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Users/euiyoung.hwang/opt/anaconda3/lib/python3.9/http/client.py", line 1371, in getresponse
+    response.begin()
+  File "/Users/euiyoung.hwang/opt/anaconda3/lib/python3.9/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/Users/euiyoung.hwang/opt/anaconda3/lib/python3.9/http/client.py", line 288, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.008s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:12] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:12] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.011s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.006s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.009s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.010s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.023s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.009s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.009s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.025s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.020s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.007s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.007s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.024s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.008s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.007s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.006s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.007s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.008s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.006s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.006s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:13] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:13] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.007s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.006s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.007s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.009s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.007s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.011s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.007s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.008s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.008s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.010s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.006s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.016s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.020s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.005s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.003s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
+[2023-08-17 22:41:14] [INFO] POST http://localhost:9209/_bulk [status:200 request:0.004s]
+[2023-08-17 22:41:14] [INFO] ** indexing ** : 3
