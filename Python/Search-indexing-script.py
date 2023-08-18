@@ -6,7 +6,7 @@ from config.log_config import create_log
 import argparse
 
 logger = create_log()
-MAX_BYTES = 10485760
+MAX_BYTES = 1048576
 
 def get_headers():
     ''' Elasticsearch Header '''
@@ -133,7 +133,7 @@ if __name__ == "__main__":
     # Instance for the response time log
     es_host = get_es_instance(host)
     # --
-    index = "movies"
+    index = "test_omnisearch_v1"
 
     create_index(es_host, index)
     # sinngle_indexing_mode_run(es_host, index)
