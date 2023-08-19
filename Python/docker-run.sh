@@ -6,7 +6,6 @@ SCRIPTDIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 echo $SCRIPTDIR
 
-
 #docker run -rm -it --name a-test fn-search:run
 
 docker run --rm --platform linux/amd64 -it -d \
