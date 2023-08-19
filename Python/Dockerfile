@@ -39,9 +39,4 @@ WORKDIR /app
 COPY --from=indexing_environment /app .
 COPY . ES-Services
 
-ENV PATH="${PATH}:${POETRY_VENV}/bin"
-ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-
-RUN /bin/bash -c 'source $POETRY_VENV/bin/activate'
-
 ENTRYPOINT ["/app/ES-Services/docker-run-entrypoints.sh"]
