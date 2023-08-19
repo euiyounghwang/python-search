@@ -62,7 +62,7 @@ def Get_Buffer_Length(docs):
 
 def load():
     df = (
-        pd.read_csv("../Dataset/wiki_movie_plots_deduped.csv")
+        pd.read_csv("./Dataset/wiki_movie_plots_deduped.csv")
         .dropna()
         .sample(5000, random_state=42)
         .reset_index()
@@ -93,7 +93,7 @@ def buffer_indexing_mode_run(es, _index):
     logger.info("buffer_indexing_mode_run Loading..")
     df = load()
     logger.info(df.loc[0])
-
+    
     actions = []
     for i, row in df.iterrows():
         doc = {
@@ -117,7 +117,7 @@ def buffer_indexing_mode_run(es, _index):
             del actions[:]
 
     # --
-    # Index for the remain dataset
+    # Index for the remain Dataset
     # --
     response = es.bulk(body=actions)
     logger.info("** Remain Dataset indexing ** : {}".format(json.dumps(response, indent=2)))
@@ -125,12 +125,13 @@ def buffer_indexing_mode_run(es, _index):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Index into Elasticsearch using this script")
-    parser.add_argument('-t', '--target', dest='target', default="http://localhost:9209", help='host target')
+    parser.add_argument('-e', '--es', dest='es', default="http://localhost:9209", help='host target')
     args = parser.parse_args()
 
-    if args.target:
-        host = args.target
+    if args.es:
+        host = args.es
 
+    print('host - ', host)
     # --
     # Instance for the response time log
     es_host = get_es_instance(host)

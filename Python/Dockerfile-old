@@ -1,0 +1,18 @@
+
+FROM --platform=linux/amd64 python:3.9.7 as indexing_runtime
+ARG DEBIAN_FRONTEND=noninteractive
+
+WORKDIR /app/
+
+#COPY poetry.lock pyproject.toml ./
+
+COPY requirements.txt requirements.txt
+
+RUN pip3 install --upgrade pip
+RUN pip3 install -r requirements.txt
+
+COPY . /ES-Services
+
+WORKDIR /app/ES-Services/
+
+ENTRYPOINT python /app/ES-Services/search-indexing-script.py --es $ES_HOST

@@ -4,16 +4,18 @@ set -eu
 
 SCRIPTDIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
-#docker run --rm -it -d --publish 9081:8081 --expose 9200 \
-#  -e node.name=fn-dm-bees-data-01 \
-#  -v "$SCRIPTDIR:/FN-BEES-Services/" \
-#  fn-flask-api:es
+echo $SCRIPTDIR
 
-docker run --platform linux/amd64 --rm -it -d \
+
+#docker run -rm -it --name a-test fn-search:run
+
+docker run --platform linux/amd64 -it -d \
   --name fn-search-app \
   --network bridge \
-  -v "$SCRIPTDIR:/ES-Services/" \
-  fn-search:run
+  -e ES_HOST="http://host.docker.internal:9209" \
+  -v "$SCRIPTDIR:/app/ES-Services/" \
+  fn-search:run \
+
 
 
 
