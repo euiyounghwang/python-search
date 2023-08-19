@@ -69,6 +69,7 @@ ENTRYPOINT ["/app/ES-Services/docker-run-entrypoints.sh"]
 ```
 
 ## Docker run
+```
 docker run --platform linux/amd64 -it -d \
   --name fn-search-app \
   --network bridge \
