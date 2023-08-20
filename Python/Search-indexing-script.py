@@ -68,6 +68,31 @@ def load():
         .reset_index()
     )
     return df
+    
+
+def search(es, _index):
+    response = es.search(
+        index=_index,
+        body={
+                "query" : {
+                    "bool": {
+                        "must": [
+                            {
+                            "match_phrase": {
+                                "cast": "jack nicholson",
+                            }
+                        }],
+                        "filter": {"bool": {"must_not": {"match_phrase": {"director": "roman polanski"}}}}
+                    }
+                }
+        }
+    )
+
+    # Show total counts from elasticsearch
+    logger.info("Total counts for search - {}".format(json.dumps(response['hits']['total']['value'], indent=2)))
+    # Show first rows from elasticsearch
+    logger.info("response for search - {}".format(json.dumps(response['hits']['hits'][0], indent=2)))
+
 
 def sinngle_indexing_mode_run(es, _index):
     logger.info("sinngle_indexing_mode_run Loading..")
@@ -139,5 +164,9 @@ if __name__ == "__main__":
     index = "test_omnisearch_v2"
 
     create_index(es_host, index)
+
     # sinngle_indexing_mode_run(es_host, index)
     buffer_indexing_mode_run(es_host, index)
+
+    # search
+    search(es_host, index)
