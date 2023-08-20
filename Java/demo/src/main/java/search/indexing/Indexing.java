@@ -1,21 +1,22 @@
 package search.indexing;
 
 public class Indexing extends Thread{
-    int num;
+    String host;
 
-    public Indexing() {
+    public Indexing(String[] args) {
+        this.host = args[0];
         System.out.println("Hellow Indexing..");
     }
 
     @Override
     public void run() {
-        System.out.println(this.num + " thread start");
+        System.out.println(this.host + " thread start");
         try{
             Thread.sleep(1000);
         }catch (InterruptedException e){
             e.printStackTrace();
         }
-        System.out.println(this.num +" thread end");
+        System.out.println(this.host +" thread end");
     }
 }
 

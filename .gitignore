@@ -1,2 +1,3 @@
-./Java/demo/target/
-./Python/logs/
+/Java/demo/target/
+/Python/logs/
+/Python/.venv/

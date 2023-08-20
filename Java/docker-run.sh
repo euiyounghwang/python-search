@@ -13,6 +13,7 @@ echo $SCRIPTDIR
 docker run --platform linux/amd64 --rm -it -d \
   --name fn-search-java-app \
   --network bridge \
+  -e ES_HOST="http://host.docker.internal:9209" \
   -v "$SCRIPTDIR:/app/ES-Services/" \
   fn-search-java:es \
 
