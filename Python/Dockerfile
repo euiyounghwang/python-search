@@ -31,8 +31,8 @@ RUN /bin/bash -c 'source $POETRY_VENV/bin/activate && \
 FROM --platform=linux/amd64 python:3.9.7 as indexing_runtime
 
 # Configure Poetry
-ENV POETRY_VERSION=1.3.2
-ENV POETRY_VENV=/app/poetry-venv
+# ENV POETRY_VERSION=1.3.2
+# ENV POETRY_VENV=/app/poetry-venv
 
 WORKDIR /app
 #COPY --from=indexing_environment $POETRY_VENV $POETRY_VENV
