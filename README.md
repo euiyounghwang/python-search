@@ -1,5 +1,5 @@
 
-## Python-Search Project for indexing based on Python, Java
+### Python-Search Project for indexing based on Python
 
 Install Poerty
 ```
@@ -9,6 +9,7 @@ https://python-poetry.org/docs/?ref=dylancastillo.co#installing-with-the-officia
 Using Poetry: Create the virtual environment in the same directory as the project and install the dependencies:
 ```
 poetry config virtualenvs.in-project true
+poetry init
 poetry install
 ```
 
@@ -18,7 +19,7 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Poetry Enviroment
+### Poetry Enviroment
 Install Poerty to Dockerfile as indexing_environment
 ```
 FROM --platform=linux/amd64 python:3.9.7 as indexing_environment
@@ -69,10 +70,20 @@ ENTRYPOINT ["/app/ES-Services/docker-run-entrypoints.sh"]
 ```
 
 ## Docker run
+```
 docker run --platform linux/amd64 -it -d \
   --name fn-search-app \
   --network bridge \
   -e ES_HOST="http://host.docker.internal:9209" \
   -v "$SCRIPTDIR:/app/ES-Services/" \
   fn-search:run \
+```
+
+![image](https://github.com/euiyounghwang/python-search/assets/84139720/674e6559-1d7a-4755-ba1a-412369119ede)
+
+
+### Python-Search Project for indexing based on Java with Maven
+Run Maven install -f ".."
+```
+java -jar ./demo/target/java-indexing-1.0-SNAPSHOT.jar
 ```

@@ -1,0 +1,28 @@
+
+# mvn clean -f "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Java/demo/pom.xml"
+# mvn install -f "/Users/euiyoung.hwang/ES/Python_Workspace/python-search/Java/demo/pom.xml"
+
+FROM --platform=linux/amd64 openjdk:11 as environment
+ARG DEBIAN_FRONTEND=noninteractive
+ARG JAR_FILE=demo/target/java-indexing-1.0-SNAPSHOT.jar
+
+ENV TZ=America/Chicago
+
+WORKDIR /app
+COPY ${JAR_FILE} ./indexing.jar
+
+
+FROM --platform=linux/amd64 openjdk:11 as runtime
+
+WORKDIR /app
+
+COPY --from=environment /app .
+COPY . ES-Services
+COPY /app/ES-Services/${JAR_FILE} /app/ES-Services/indexing.jar
+
+# CMD java -jar /app/ES-Services/indexing.jar
+
+# ENTRYPOINT ["/app/ES-Services/docker-run-entrypoints.sh"]
+ENTRYPOINT ["java","-jar","/app/indexing.jar"]
+
+
