@@ -8,12 +8,13 @@ echo $SCRIPTDIR
 
 #docker run -rm -it --name a-test fn-search:run
 
+# docker run --rm --name abc fn-search-java:es
+
 docker run --platform linux/amd64 --rm -it -d \
-  --name fn-search-app \
+  --name fn-search-java-app \
   --network bridge \
-  -e ES_HOST="http://host.docker.internal:9209" \
   -v "$SCRIPTDIR:/app/ES-Services/" \
-  fn-search:es \
+  fn-search-java:es \
 
 
 

@@ -10,6 +10,6 @@ set -eu
 
 docker build \
   -f "$(dirname "$0")/Dockerfile" \
-  -t fn-search:es \
-  --target indexing_runtime \
+  -t fn-search-java:es \
+  --target environment \
   "$(dirname "$0")/."

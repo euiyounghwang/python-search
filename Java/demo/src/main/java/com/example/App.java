@@ -1,4 +1,5 @@
 package com.example;
+import search.indexing.Indexing;
 
 /**
  * java -cp ./demo-1.0-SNAPSHOT.jar com.example.App
@@ -10,6 +11,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        // new Indexing();
+        Indexing myThread = new Indexing();
+        myThread.start();
+        System.out.println("main end");
     }
 }
+
+
