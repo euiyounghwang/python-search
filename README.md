@@ -78,6 +78,9 @@ docker run --platform linux/amd64 -it -d \
   fn-search:run \
 ```
 
+![image](https://github.com/euiyounghwang/python-search/assets/84139720/674e6559-1d7a-4755-ba1a-412369119ede)
+
+
 ### Python-Search Project for indexing based on Java with Maven
 Run Maven install -f ".."
 ```
