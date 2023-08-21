@@ -14,7 +14,6 @@ public class App
         // new Indexing();
         Indexing myThread = new Indexing(args);
         myThread.start();
-        System.out.println("main end");
     }
 }
 
