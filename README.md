@@ -85,5 +85,5 @@ docker run --platform linux/amd64 -it -d \
 ### Python-Search Project for indexing based on Java with Maven
 Run Maven install -f ".."
 ```
-java -jar ./demo/target/java-indexing-1.0-SNAPSHOT.jar
+java -jar ./demo/target/java-indexing-1.0-SNAPSHOT.jar http://localhost:9209
 ```
