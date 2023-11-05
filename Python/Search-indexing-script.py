@@ -22,14 +22,68 @@ def create_index(es_client, _index):
     mapping = {
         "mappings": {
             "properties": {
-                "title": {"type": "text", "analyzer": "english", "fields" : {"keyword":{"type" : "keyword"}}},
-                "ethnicity": {"type": "text", "analyzer": "standard"},
-                "director": {"type": "text", "analyzer": "standard"},
-                "cast": {"type": "text", "analyzer": "standard"},
-                "genre": {"type": "text", "analyzer": "standard"},
-                "plot": {"type": "text", "analyzer": "english"},
-                "year": {"type": "integer"},
-                "wiki_page": {"type": "keyword"}
+                "title": {
+                    "type": "text",
+                    "analyzer": "english",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "ethnicity": 
+                {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "director": 
+                {
+                    "type": "text",
+                    "analyzer": "standard",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "cast": 
+                {
+                    "type": "text",
+                    "analyzer": "standard",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "genre": 
+                 {
+                    "type": "text",
+                    "analyzer": "standard",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "plot": 
+                {
+                    "type": "text",
+                    "term_vector": "with_positions_offsets",
+                    "analyzer": "fn_leg_string_analyzer_v1",
+                    "similarity": "BM25"
+                },
+                "year": {
+                    "type": "integer"
+                },
+                "wiki_page": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword"
+                        }
+                    }
+                }
             }
         }
     }
