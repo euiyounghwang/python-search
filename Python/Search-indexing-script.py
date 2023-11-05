@@ -70,7 +70,7 @@ def create_index(es_client, _index):
                 {
                     "type": "text",
                     "term_vector": "with_positions_offsets",
-                    "analyzer": "fn_leg_string_analyzer_v1",
+                    "analyzer": "standard",
                     "similarity": "BM25"
                 },
                 "year": {
@@ -97,6 +97,7 @@ def create_index(es_client, _index):
         # now create a new index
         es_client.indices.create(index=_index, body=mapping)
         es_client.indices.put_alias(index, "omnisearch_search")
+        es_client.indices.refresh(index=index)
         logger.info("Successfully created: {}".format(_index))
     except Exception as error:
         logger.error('Error: {}, index: {}'.format(error, _index))
